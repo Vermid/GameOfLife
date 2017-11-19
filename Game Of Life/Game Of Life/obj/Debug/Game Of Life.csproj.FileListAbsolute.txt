@@ -1,0 +1,41 @@
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe.config
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\bin\Debug\Game Of Life.pdb
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\MainWindow.g.cs
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\App.g.cs
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.cache
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.lref
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\MainWindow.baml
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game Of Life.g.resources
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game_Of_Life.Properties.Resources.resources
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csproj.GenerateResource.Cache
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game Of Life.exe
+c:\users\zs\documents\visual studio 2017\Projects\Game Of Life\Game Of Life\obj\Debug\Game Of Life.pdb
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe.config
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\bin\Debug\Game Of Life.pdb
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csprojResolveAssemblyReference.cache
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\MainWindow.g.cs
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\App.g.cs
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.cache
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.lref
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\MainWindow.baml
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life.g.resources
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game_Of_Life.Properties.Resources.resources
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csproj.GenerateResource.Cache
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life.exe
+C:\Users\Zaims\Desktop\Game Of Life\Game Of Life\obj\Debug\Game Of Life.pdb
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csprojResolveAssemblyReference.cache
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\MainWindow.g.cs
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\App.g.cs
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.cache
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.lref
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.exe
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.pdb
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe.config
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\bin\Debug\Game Of Life.pdb
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\MainWindow.baml
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.g.resources
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game_Of_Life.Properties.Resources.resources
+C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csproj.GenerateResource.Cache
