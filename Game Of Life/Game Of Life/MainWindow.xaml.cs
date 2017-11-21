@@ -3,7 +3,6 @@ using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using System.Windows.Threading;
@@ -20,6 +19,12 @@ namespace Game_Of_Life
         PlayGround playGround;
         DispatcherTimer dispatcherTimer = new DispatcherTimer();
         Canvas newCanvas = new Canvas();
+        string myPath = $"{ Environment.GetFolderPath(Environment.SpecialFolder.Desktop) }\\GameOfLife.txt";
+
+        //dont like this try to change it
+        private int _y;
+        private int _x;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +47,7 @@ namespace Game_Of_Life
             }
             catch (Exception e)
             {
-                MessageBox.Show("Please use Numbers and not Words ");
+                MessageBox.Show("Please use Numbers nothing else");
             }
         }
 
@@ -52,6 +57,7 @@ namespace Game_Of_Life
             playGround.CheckNeighbor();
             DrawPlayeGround();
         }
+
         private void UpdateUI()
         {
             GenerationTextBox.Text = playGround.GetGeneration().ToString();
@@ -64,13 +70,14 @@ namespace Game_Of_Life
                 playGround = null;
             }
             myCanvas.Children.Clear();
-            dispatcherTimer.Stop();
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            StopTimer();
             Inital();
         }
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+
             StartTimer();
         }
 
@@ -94,22 +101,28 @@ namespace Game_Of_Life
             }
         }
 
-        private void SingleStepButton_Click(object sender, RoutedEventArgs e)
+        private void StopTimer()
         {
             dispatcherTimer.Stop();
+        }
+
+        private void SingleStepButton_Click(object sender, RoutedEventArgs e)
+        {
+            StopTimer();
             UpdateField();
         }
 
         private void StopPauseButton_Click(object sender, RoutedEventArgs e)
         {
-            dispatcherTimer.Stop();
+            StopTimer();
         }
 
         private void DrawPlayeGround()
         {
-
-            _y = 0;
+            //you need this or you matrix want be drawn
             _x = 0;
+            _y = 0;
+
             myCanvas.Children.Clear();
 
             for (int i = 0; i < fieldSize; i++)
@@ -143,9 +156,6 @@ namespace Game_Of_Life
 
             myCanvas.Children.Add(rectangle);
         }
-
-        private int _y;
-        private int _x;
 
         private void DrawFieldMatrix()
         {
@@ -182,7 +192,7 @@ namespace Game_Of_Life
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            string myPath = $"{ Environment.GetFolderPath(Environment.SpecialFolder.Desktop) }\\GameOfLife.txt";
+            StopTimer();
 
             if (File.Exists(myPath))
             {
@@ -191,23 +201,82 @@ namespace Game_Of_Life
 
             StringBuilder myString = new StringBuilder();
 
-            for (int i = 0; i < fieldSize; i++)
+            myString.AppendLine($"pixelSize:{pixelSize} | fieldSize:{fieldSize}");
+
+            for (int y = 0; y < fieldSize; y++)
             {
                 for (int x = 0; x < fieldSize; x++)
                 {
-                    myString.AppendLine((playGround.gameBoard[i, x]);
-
+                    if (playGround.gameBoard[y, x] != null)
+                    {
+                        myString.AppendLine($"PosY:{y} | PosX:{x}");
+                    }
                 }
             }
-            Console.WriteLine(playGround.gameBoard.ToString());
 
-            //    File.WriteAllText(myPath, playGround.gameBoard.ToString());
+            File.WriteAllText(myPath, myString.ToString());
             MessageBox.Show("Game Saved!! \n Save Path" + myPath);
         }
 
-        private void TestButton_Click(object sender, RoutedEventArgs e)
+        private void Load_Click(object sender, RoutedEventArgs e)
         {
+            dispatcherTimer.Stop();
 
+            //maybe you will need here a exception because of the save path.
+            // if there is no file to load 
+            string[] lines = File.ReadAllLines(myPath);
+            string[] poslines;
+
+            if (playGround != null)
+            {
+                // clear the current field and array 
+                myCanvas.Children.Clear();
+                //clear the field before you load a old one
+                Array.Clear(playGround.gameBoard, 0, playGround.gameBoard.Length);
+            }
+
+            foreach (string line in lines)
+            {
+                poslines = line.Split('|');
+
+                if (line.Contains("PosX"))
+                {
+                    if (poslines.Length > 1)
+                    {
+                        try
+                        {
+                            int x = Convert.ToInt32(poslines[0].Remove(0, 5));
+                            int y = Convert.ToInt32(poslines[1].Remove(0, 6));
+                            playGround.CreateNewCreature(y, x);
+                        }
+                        catch (Exception ex)
+                        {
+                            // save the exception info into a logfile to check what happens 
+                            // databse should not allow to change this settings
+                        }
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        int pixel = Convert.ToInt32(poslines[0].Remove(0, 10));
+                        int field = Convert.ToInt32(poslines[1].Remove(0, 11));
+
+                        pixelSize = pixel;
+                        fieldSize = field;
+                        playGround = new PlayGround(fieldSize);
+                    }
+                    catch (Exception ex)
+                    {
+                        // save the exception info into a logfile to check what happens 
+                        // databse should not allow to change this settings
+                        pixelSize = 10;
+                        fieldSize = 100;
+                    }
+                }
+            }
+            DrawPlayeGround();
         }
     }
 }
