@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
 
 namespace Game_Of_Life
 {
@@ -34,6 +29,13 @@ namespace Game_Of_Life
                 }
             }
         }
+
+        public PlayGround(int size)
+        {
+            fieldSize = size;
+            gameBoard = new Creature[fieldSize, fieldSize];
+        }
+
 
         /// <summary>
         /// Checks all neighbors for every field
@@ -118,7 +120,7 @@ namespace Game_Of_Life
                             generation++;
                         }
                     }
-                    //no creature ? check if a creature cna live here
+                    //no creature ? check if a creature can live here
                     else
                     {
                         if (creatures == 3)
@@ -133,7 +135,13 @@ namespace Game_Of_Life
             //with Array.Clear you can clear an array very easy (What you want to clear, From what Pos, To what pos)
             Array.Clear(gameBoard, 0, gameBoard.Length);
             gameBoard = newGeneration;
+        }
 
+
+        public void CreateNewCreature(int y, int x)
+        {
+            Creature creature = new Creature();
+            gameBoard[y, x] = creature;
         }
 
         public int GetGeneration()

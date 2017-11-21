@@ -39,3 +39,17 @@ C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\MainWindow
 C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.g.resources
 C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game_Of_Life.Properties.Resources.resources
 C:\Users\Zaims\Desktop\MyPrograms\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csproj.GenerateResource.Cache
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\MainWindow.g.cs
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\App.g.cs
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.cache
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life_MarkupCompile.lref
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life.exe
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life.pdb
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe.config
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\bin\Debug\Game Of Life.exe
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\bin\Debug\Game Of Life.pdb
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\MainWindow.baml
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life.g.resources
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game_Of_Life.Properties.Resources.resources
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csproj.GenerateResource.Cache
+Z:\GitHub\GameOfLife\Game Of Life\Game Of Life\obj\Debug\Game Of Life.csprojResolveAssemblyReference.cache
